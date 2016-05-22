@@ -8,17 +8,17 @@ public class Main {
 
     public static void main(String[] args) {
         Semaphore semaphore = new Semaphore();
-        BufferedReader reader = null;
+        BufferedReader Reader = null;
 
         String query = "";
         try {
-            reader = new BufferedReader(new InputStreamReader(System.in));
-            query = reader.readLine();
+            Reader = new BufferedReader(new InputStreamReader(System.in));
+            query = Reader.readLine();
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
             try {
-                if (reader!=null) reader.close();
+                if (Reader!=null) Reader.close();
             } catch (Exception e) {
                 e.printStackTrace();
             }
